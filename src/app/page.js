@@ -1,101 +1,108 @@
-import Image from "next/image";
+import SimilarItems from "../components/SimilarItems";
+import SubscribeSection from "../components/SubscribeSection";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="container mx-auto p-6">
+      <div className="flex flex-wrap items-start bg-white shadow-md rounded-lg">
+        {/* Left Section: Image */}
+        <section className="w-full md:w-1/2 p-6">
+          <img
+            src="./cheese.png"
+            alt="Cheese – appareil à raclette 1/2 roue"
+            className="w-auto h-auto max-h-[600px] object-cover rounded-lg"
+          />
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* Right Section: Product Details and Cart Button */}
+        <section className="w-full md:w-1/2 p-6">
+          <h1 className="text-3xl font-bold text-black">
+            Cheese – appareil à raclette 1/2 roue
+          </h1>
+          <p className="mt-2 text-gray-600 text-lg">39,50€ / pièce</p>
+          <div className="flex items-center mb-4">
+            <div className="flex items-center mr-6">
+              <img src="./scale.svg" className="w-8" />
+              <span className="text-black">20 cm</span>
+            </div>
+            <div className="flex items-center">
+              <img src="./scale.svg" className="w-8" />
+              <span className="text-black">50 cm</span>
+            </div>
+          </div>
+          <div>
+            <ul className="mt-4 space-y-2 text-gray-700">
+              <li>
+                Location appareil à raclette - Raclette traditionnelle 1/2 roue
+              </li>
+              <li>Préalable en intérieur</li>
+              <li>Appareil à raclette professionnel</li>
+              <li>Bras de chauffe horizontal réglable en hauteur</li>
+              <li>230V</li>
+              <li>900W</li>
+            </ul>
+          </div>
+          <div className="mt-20 pt-14">
+            {/* Added margin-top for gap */}
+            <div className="mt-auto">
+              <div className="flex items-center mb-4 w-full">
+                <div className="flex items-center">
+                  <button className="bg-gray-200 text-gray-700 px-2 py-1 rounded-l">
+                    -
+                  </button>
+                  <span className="bg-white border-t border-b border-gray-200 px-4 py-1 text-black">
+                    1
+                  </span>
+                  <button className="bg-gray-200 text-gray-700 px-2 py-1 rounded-r">
+                    +
+                  </button>
+                </div>
+                <button className="ml-4 px-4 py-2 bg-teal-500 text-white text-sm font-semibold rounded-lg hover:bg-teal-600 flex-grow">
+                  Ajouter au panier
+                </button>
+              </div>
+              <hr className="border-t-2 border-dotted border-gray-300 mt-4" />
+            </div>
+          </div>
+        </section>
+
+        {/* Description Section */}
+        <div className="w-full md:w-1/2 p-6">
+          <p className="mt-4 text-gray-700 text-2xl">Description produit</p>
+          <p className="mt-4 text-gray-700">
+            This raclette machine is perfect for melting cheese and serving
+            delicious raclette dishes at home or in professional settings. Enjoy
+            a traditional raclette experience with this easy-to-use raclette
+            machine, perfect for gatherings and family dinners.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* Questions Section */}
+        <div className="w-full md:w-1/2 p-6">
+          <div className="border border-gray-300 p-4 rounded-lg mb-2">
+            <div className="flex justify-between items-center">
+              <h2 className="text-xl font-semibold text-black">LIVRAISONS</h2>
+              <span className="text-teal-500 text-lg font-semibold cursor-pointer">
+                +
+              </span>
+            </div>
+          </div>
+          <div className="border border-gray-300 p-4 rounded-lg">
+            <div className="flex justify-between items-center">
+              <h2 className="text-xl font-semibold text-black">QUESTIONS</h2>
+              <span className="text-teal-500 text-lg font-semibold cursor-pointer">
+                +
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Similar Items Section */}
+      <SimilarItems />
+
+      {/* Subscribe Section */}
+      <SubscribeSection />
     </div>
   );
 }
