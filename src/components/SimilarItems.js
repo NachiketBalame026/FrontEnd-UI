@@ -75,6 +75,14 @@ const SimilarItems = () => (
         reference="RÉF : VABGN5"
         pieces="20 pièces"
       />
+      <ProductCard
+        image="./table.png"
+        title="ART DE LA TABLE"
+        price="0€"
+        unitPrice="0,35€/Pièce"
+        reference="RÉF : VABGN5"
+        pieces="20 pièces"
+      />
     </div>
   </section>
 );
