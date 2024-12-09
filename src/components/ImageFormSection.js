@@ -11,11 +11,11 @@ const ImageFormSection = () => (
     </div>
     <div className="w-full md:w-1/2 p-4 bg-gradient-to-b from-pink-200 to-white rounded-lg">
       <h2 className="text-2xl font-bold text-black">
-        On s'occupe de <span className="text-blue-500">tout</span>
+        On s&#39;occupe de <span className="text-blue-500">tout</span>
       </h2>
       <p className="mt-2 text-sm text-black">
         Office ipsum you must be muted. Synergize helicopter prioritize anyway
-        job due harvest most opportunity didn't. Yet busy any meeting shark
+        job due harvest most opportunity didn&#39;t. Yet busy any meeting shark
         light marginalised 4-blocker message. Productize corporate nail caught
         synergy highlights lunch. Company another pushback items dear or any.
       </p>
@@ -26,7 +26,7 @@ const ImageFormSection = () => (
           className="border px-4 py-2 rounded-l"
         />
         <button className="bg-blue-500 text-white px-4 py-2 rounded-r">
-          S'inscrire
+          S&#39;inscrire
         </button>
       </form>
     </div>

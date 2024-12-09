@@ -24,7 +24,7 @@ const Footer = () => (
           </li>
           <li>
             <a href="#" className="hover:underline">
-              Modes d'emploi
+              Modes d&#39;emploi
             </a>
           </li>
           <li>

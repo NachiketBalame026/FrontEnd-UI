@@ -3,7 +3,7 @@ import React from "react";
 const ServiceSection = () => (
   <section className="bg-gradient-to-b from-pink-200 to-white p-8 text-center mt-10 rounded-lg">
     <h2 className="text-2xl font-bold text-black">
-      On s'occupe de <span className="text-blue-500">tout</span>
+      On s&#39;occupe de <span className="text-blue-500">tout</span>
     </h2>
     <p className="mt-2 text-sm text-black">
       Offrez toujours vos meals les mieux livrés, et meeting conveniant busy
@@ -44,7 +44,7 @@ const ServiceSection = () => (
           className="mx-auto mb-2"
         />
         <h3 className="font-bold text-black">Transport & Enlèvement</h3>
-        <p className="text-sm text-black">On s'occupe de tout</p>
+        <p className="text-sm text-black">On s&#39;occupe de tout</p>
       </div>
     </div>
   </section>

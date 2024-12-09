@@ -1,3 +1,4 @@
+import React from "react";
 import SimilarItems from "../components/SimilarItems";
 import SubscribeSection from "../components/SubscribeSection";
 
